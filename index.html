@@ -1,45 +1,94 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BIENVENIDOS A MI BLOG</title>
-    <link rel="stylesheet" href ="style.css"></link>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BIENVENIDOS A MI BLOG</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>BIENVENIDOS A MI BLOG DE APRENDIZAJE EN DESARROLLO WEB</h1>
-        <nav><!-- para navegar-->
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#acerca_de">Acerca de</a></li>
-                <li><a href="#Contacto">Contacto</a></li>
-            </ul>
+  <header>
+    <h1>BIENVENIDOS AL BLOG DE APRENDIZAJE EN DESARROLLO WEB</h1>
+    <button id="nav-toggle" aria-label="toggle navigation">☰</button>
+    <nav>
+      <ul>
+        <li><a href="post">post</a></li>
+        <li><a href="laboratorios">Laboratorios</a>
+          <ul>
+            <li><a href="#laboratorio1">Laboratorio 1</a></li>
+            <li><a href="#laboratorio2">Laboratorio 2</a></li>
+            <li><a href="#laboratorio3">Laboratorio 3</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-        </nav>
-    </header>
-    <main> <!-- et semántica, sólo se crea una por página y es contenedor central-->
-        <section id="inicio">   <!-- sesion home-->
-            <h3>Introduccion</h3>
-            <p> Mi blog tendrá menú desplegable javascript y post</p>
-        </section>
-        <section id="servicios">   <!-- sesion -->
-            <h3>Servicios</h3>
-            <p> Mi blog tendrá menú desplegable javascript y post</p>
-        </section>
-        <section id="acerca_de">   <!-- sesion acerca de -->
-            <h3>Acerca_de</h3>
-            <p> Mi blog tendrá menú desplegable javascript y post</p>
-        </section>
-        <section id="contacto">   <!-- sesion contacto-->
-            <h3>Contactáme</h3>
-            <p> Mi blog tendrá menú desplegable javascript y post</p>
-        </section>
-        
-            <!-- sigue la barra fija para que el banner no se mueva cuando naveguemos-->
-    </main>
-    <footer>
-        <p> &copy derechos reservados Javier Vera 2025 </p>
-    </footer>
+  <main>
+    <section>
+      <h1>Bienvenido a mi Blog</h1>
+      <article id="articulo1">
+        <h2>Páginas recomendadas</h2>
+        <p> Para mayor conocimiento les recomiendo las siguientes páginas para que practiquen<br>
+           <a href="https://www.w3schools.com/" target="_blank">W3 school</a>, Excelente para que lo intentes tú mismo</p>
+      </article>
+
+      <article id="articulo2">
+        <h2>CSS para principiantes</h2>
+        <p>Primeros pasos en fundamentos de CSS.</p>
+      </article>
+
+      <article id="articulo3">
+        <h2>JavaScript básico</h2>
+        <p>Nuestros primeros pasos con JavaScript.</p>
+      </article>
+
+      <section id="inicio">
+        <h3>Inicio</h3>
+        <p>Mi blog tendrá menú desplegable, artículos, desarrollo web, sus post que serán almacenados.</p>
+      </section>
+
+      <section id="servicios">
+        <h3>Servicios</h3>
+        <p>Opiniones en diseño web, lenguajes de programación,<br>
+           tutorías y proyectos en GitHub y sus comentarios</p>
+      </section>
+
+      <section id="acerca_de">
+        <h3>Acerca de</h3>
+        <p>Este blog es un espacio de aprendizaje para compartir ideas entre desarrolladores.</p>
+      </section>
+
+      <section id="contacto">
+        <h3>Contáctame</h3>
+        <form>
+          <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre"><br><br>
+          <textarea id="mensaje" name="mensaje" placeholder="Deja tu comentario"></textarea><br><br>
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </section>
+
+    <aside>
+      <h3>BLOG </h3>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#acerca_de">Acerca de</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </aside>
+    <aside>
+      <h3>Contador de visitas </h3>
+    </aside>
+    <aside>
+      <h3>Tus post aquí</h3>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; Derechos reservados Javier Vera 2025</p>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
